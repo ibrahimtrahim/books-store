@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import {FaGithub, FaLinkedinIn, FaInstagram} from 'react-icons/fa';
 
@@ -8,16 +9,16 @@ const Footer = () => {
     <footer className='text-center text-white' style={{ backgroundColor: '#f1f1f1' }}>
         <Container className='pt-4'>
             <section className='mb-4'>
-                <a href="/" className='text-dark mx-4'><FaGithub/></a>
-                <a href="/" className='text-dark mx-4'><FaLinkedinIn/></a>
-                <a href="/" className='text-dark mx-4'><FaInstagram/></a>
+                <Link to="/" className='text-dark mx-4'><FaGithub/></Link>
+                <Link to="/" className='text-dark mx-4'><FaLinkedinIn/></Link>
+                <Link to="/" className='text-dark mx-4'><FaInstagram/></Link>
             </section>
         </Container>
         <div className='text-center text-dark p-3 bg-body-tertiary'>
         © 2023 Copyright:
-        <a className='text-dark' href='/'>
+        <Link className='text-dark' to='/'>
         BookHaven
-        </a>
+        </Link>
         </div>
     </footer>
   )
