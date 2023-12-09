@@ -7,6 +7,9 @@ body {
 main {
   min-height: 80vh;
 }
+h2 {
+  color: #9B5DE5;
+}
 .logo {
   width: 40px;
   height: 40px;
